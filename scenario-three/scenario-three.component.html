@@ -1,0 +1,7 @@
+<h2>{{title}}</h2>
+<label>
+  Enter Anything:
+  <input type="text" [formControl]="parentString"  (ngModelChange)="passValue()">
+</label>
+<!-- <app-child [passToChildVar]=parentString></app-child> -->
+<app-child [passToChildVar]="transferData"></app-child>

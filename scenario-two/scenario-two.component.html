@@ -1,0 +1,6 @@
+<h2>{{title}}</h2>
+<label>
+  Enter Anything:
+  <input type="text" [formControl]="name" (ngModelChange)="displayData()">
+</label>
+<p>You entered <b>{{display}}</b></p>

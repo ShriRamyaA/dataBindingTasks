@@ -1,0 +1,9 @@
+<h2>{{title}}</h2>
+<app-second-child (childToParent)='childEventHander($event)'>
+</app-second-child>
+<p>Input from second-child is <b>{{fromChild}}</b></p>
+<!-- <app-first-child [fromParent]={{fromChild}}}></app-first-child> -->
+<app-work-child [fromParent]='passToFirstChild'></app-work-child>
+
+
+
